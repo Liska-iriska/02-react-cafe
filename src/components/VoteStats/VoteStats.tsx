@@ -1,6 +1,12 @@
 import styles from "./VoteStats.module.css";
 import type { Votes } from "../../types/votes";
 
+interface VoteStatsProps {
+  votes: Votes;
+  totalVotes: number;
+  positiveRate: number;
+}
+
 export default function VoteStats({
   votes,
   totalVotes,
@@ -25,10 +31,4 @@ export default function VoteStats({
       </p>
     </div>
   );
-}
-
-interface VoteStatsProps {
-  votes: Votes;
-  totalVotes: number;
-  positiveRate: number;
 }

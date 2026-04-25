@@ -2,7 +2,7 @@ import { useState } from "react";
 import CafeInfo from "../CafeInfo/CafeInfo";
 import VoteOptions from "../VoteOptions/VoteOptions";
 import VoteStats from "../VoteStats/VoteStats";
-import NotificationMsg from "../Notification/Notification";
+import Notification from "../Notification/Notification";
 import css from "./App.module.css";
 import type { Votes, VoteType } from "../../types/votes";
 
@@ -45,7 +45,7 @@ export default function App() {
           positiveRate={positiveRate}
         />
       ) : (
-        <NotificationMsg />
+        <Notification />
       )}
     </div>
   );
